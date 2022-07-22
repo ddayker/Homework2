@@ -14,9 +14,12 @@ public class InputUtil {
                 System.out.print("--> ");
                 string = scanner.nextLine();
                 number = Integer.parseInt(string);
-                if (number >= 0)
+                if (number >= 0) {
                     flag = true;
-                else System.out.println("Error. You need to enter a non-negative integer.");
+                } else {
+                    System.out.println("Error. You need to enter a non-negative integer.");
+                }
+
             } catch (Exception e) {
                 System.out.println("Error. You need to enter a integer.");
             }

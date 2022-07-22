@@ -69,10 +69,13 @@ public class CarArrayUtil {
     }
 
     public static boolean arrayGeneratedCheck(Car[] cars) {
-        if (cars.length == 0) {
+        final int emptyArrayLength =0;
+        if (cars.length == emptyArrayLength) {
             System.out.println("The array has not been generated.");
             return false;
-        } else return true;
+        } else {
+            return true;
+        }
     }
 
     public static boolean arrayRegeneration() {

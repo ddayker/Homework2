@@ -2,6 +2,8 @@ package com.dayker.car;
 
 public class Car implements CarMovement, Comparable<Car> {
 
+    public static final String carDefaultField ="unknown";
+
     private String carBrand;
 
     private String carModel;
@@ -17,13 +19,9 @@ public class Car implements CarMovement, Comparable<Car> {
     private int numOfSeats;
 
     public Car() {
-        this.carBrand = "unknown";
-        this.carModel = "unknown";
-        this.transmission = "unknown";
-        this.engineVolume = 0;
-        this.fuelTankCapacity = 0;
-        this.numOfDoors = 0;
-        this.numOfSeats = 0;
+        this.carBrand = carDefaultField;
+        this.carModel = carDefaultField;
+        this.transmission = carDefaultField;
     }
 
     public Car(String carBrand, String carModel, String transmission, double engineVolume, double fuelTankCapacity, int numOfDoors, int numOfSeats) {
